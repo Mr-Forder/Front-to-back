@@ -1,32 +1,13 @@
 import React, { useState } from "react";
+import Header from "./components/Header";
+import List from "./components/List";
+import data from "./dummyData/data";
 
 const App = () => {
-  const list = [
-    {
-      name: "1",
-      message: "Blah bloo blaah",
-    },
-    {
-      name: "2",
-      message: "flapstain",
-    },
-    {
-      name: "3",
-      message: "caroooo",
-    },
-    {
-      name: "4",
-      message: "Blah bleep blaah",
-    },
-    {
-      name: "5",
-      message: "Carpe diem",
-    },
-  ];
-
   return (
     <div className="container">
-      <h1>Hi there.</h1>
+      <Header />
+      <List data={data} />
     </div>
   );
 };
